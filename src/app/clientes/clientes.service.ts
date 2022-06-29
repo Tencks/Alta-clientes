@@ -6,7 +6,7 @@ import { Cliente, Grupo } from './clientes.module';
 })
 export class ClientesService {
 
-  private clientes: Cliente[];
+  private Clientes: Cliente[];
   private grupos: Grupo[];
 
   constructor() {
@@ -17,15 +17,15 @@ export class ClientesService {
       nombre: 'Sin definir'
       },
       {
-        id; 1,
+        id: 1,
         nombre: 'Activos'
       },
       {
-        id; 2,
+        id: 2,
         nombre: 'Inactivos'
       },
       {
-        id; 3,
+        id: 3,
         nombre: 'Deudores'
       },
     ];
@@ -35,14 +35,14 @@ export class ClientesService {
     return this.grupos;
    }
    getClientes () {
-    return this.clientes;
+    return this.Clientes;
    }
-   agregarCliente (cliente: Cliente) {
-    this.clientes.push(cliente);
+   agregarCliente (Cliente: Cliente) {
+    this.Clientes.push(Cliente);
    }
    nuevoCliente (): Cliente{
     return{
-      id:  this.clientes.length,
+      id:  this.Clientes.length,
       nombre: '',
       cif: '',
       direccion: '',
