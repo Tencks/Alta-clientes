@@ -25,17 +25,3 @@ import { ListadoClientesComponent } from './listado-clientes/listado-clientes.co
   ]
 })
 export class ClientesModule { } 
-
-export class Cliente {
-  id: number;
-  nombre: string;
-  cif: string;
-  direccion: string;
-  grupo: number;
-}
-
-export interface Grupo {
-  id: number;
-  nombre: string;
-}
-
