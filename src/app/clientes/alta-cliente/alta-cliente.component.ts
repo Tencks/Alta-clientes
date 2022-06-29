@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { from } from 'rxjs';
 import { ClientesService } from '../clientes.service';
 import {Cliente, Grupo} from './../clientes.module';
-import { ClientesService } from './../clientes.service';
-import { Component, OnInit } from '@angular/core';
 
 
 @Component({
@@ -13,22 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AltaClienteComponent implements OnInit {
 
-    cliente: Cliente;
-    grupos: Grupo[];
+    Cliente: Cliente;
+    Grupos: Grupo[];
 
   constructor( private clientesService: ClientesService) { }
 
   ngOnInit() {
 
-    this.cliente=
+    this.Cliente=
     this.clientesService.nuevoCliente();
-    this.grupos=
+    this.Grupos=
     this.clientesService.getGrupos();
   }
 
   nuevoCliente(): void {
-    this.clientesService.agregarCliente(this.cliente);
-      this.cliente=
+    this.clientesService.agregarCliente(this.Cliente);
+      this.Cliente=
       this.clientesService.nuevoCliente();
   }
 }
