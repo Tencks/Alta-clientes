@@ -10,7 +10,7 @@ article{
 }
 .ContenedorAlta{
     border:2px solid black;
-    background-color: bisque;
+    background-color: burlywood;
     width: 30%;
     position:relative;
     left: 35%;
@@ -20,6 +20,11 @@ article{
     font-size: 1.8em;
     grid-column: 2/4;
     margin-left: 24%;
+}
+.ContenedorAlta img{
+    position: absolute;
+    width: 12%;
+    margin-left: 85%;
 }
 .ContenedorAlta p{
     font-size: 1.1em;
@@ -53,4 +58,13 @@ article{
     text-align: center;
     margin-top: 5%;
     
+}
+
+
+.ContenedorAlta .Text5 button:hover{
+    color:red;
+    background-color: black;
+    font-size: 1.1em;
+    transition: 50ms;
+    border-radius: 5px;
 }
