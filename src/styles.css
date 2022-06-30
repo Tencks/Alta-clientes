@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: content-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+}
+body{
+    background: url(app/clientes/alta-cliente/Assets/fondoWeb.jpg);
+}
+

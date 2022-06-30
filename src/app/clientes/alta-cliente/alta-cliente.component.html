@@ -1,22 +1,29 @@
-<h2>Alta cliente</h2>
-<p>
-  <span>Nombre:</span>
-  <input type="text" [(ngModel)]="Cliente.nombre">
-</p>
-<p>
-  <span>CIF:</span>
-  <input type="text" [(ngModel)]="Cliente.cif">
-</p>
-<p>
-  <span>Dirección:</span>
-  <input type="text" [(ngModel)]="Cliente.direccion">
-</p>
-<p>
-  <span>Grupo:</span>
-  <select [(ngModel)]="Cliente.grupo">
-    <option *ngFor="let grupo of Grupos" value="{{grupo.id}}">{{grupo.nombre}}</option>
-  </select>
-</p>
-<p>
-  <button (click)="this.nuevoCliente()">Guardar</button>
-</p>
+<body>
+
+<article class="ContenedorAlta">
+  
+    <h2><ins>Alta Cliente</ins></h2>
+    <p class="Text1">
+      <span>Nombre:</span>
+      <input type="text" [(ngModel)]="Cliente.nombre">
+    </p>
+    <p class="Text2">
+      <span>Contraseña:</span>
+      <input type="text" [(ngModel)]="Cliente.cif">
+    </p>
+    <p class="Text3">
+      <span>Dirección:</span>
+      <input type="text" [(ngModel)]="Cliente.direccion">
+    </p>
+    <p class="Text4">
+      <span>Grupo:</span>
+      <select [(ngModel)]="Cliente.grupo">
+        <option *ngFor="let grupo of Grupos" value="{{grupo.id}}">{{grupo.nombre}}</option>
+      </select>
+    </p>
+    <p class="Text5">
+      <button (click)="this.nuevoCliente()">Guardar</button>
+    </p>
+</article>
+
+</body>

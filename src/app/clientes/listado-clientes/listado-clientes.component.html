@@ -1,13 +1,34 @@
-<h2>
-    Listado clientes
-  </h2>
-  <div *ngIf="! clientes.length">No hay clientes por el momento</div>
-  <div>
-    <article *ngFor="let cliente of clientes">
-      <span>{{cliente.nombre}}</span>
-      <span>{{cliente.cif}}</span>
-      <span>{{cliente.direccion}}</span>
-      <span>{{cliente.grupo}}</span>
-    </article>
-  </div>
+
+<body>
+
+<article class="ContenedorListado">
+    <h2>
+      <ins>Listado clientes</ins>
+    </h2>
+    <div class="Leyenda" *ngIf="! clientes.length">No hay clientes por el momento</div>
   
+      <aside *ngFor="let cliente of clientes">
+        
+          <span class="Lugar0">{{cliente.nombre}}</span>
+          <span class="Lugar1">{{cliente.cif}}</span>
+          <span class="Lugar2">{{cliente.direccion}}</span>
+          <span class="Lugar3">{{cliente.grupo}}</span>
+     
+      </aside>
+     
+</article>
+
+<article class="Footer">
+  <p>Diseñado por Tencks | Magic's Complex</p>
+  <div class="mp3"> 
+    <audio src="./../alta-cliente/Audio/Dark Techno.mp3" controls autoplay loop></audio>
+  </div>
+  <div class="SocialRed">
+    <a target="_blank" href="https://instagram.com/tencks_kun?igshid=YmMyMTA2M2Y="><img  src="./../alta-cliente/Assets/instagram.svg"></a> 
+    <a target="_blank" href="https://es-la.facebook.com/robertino.spini"><img style="left: 40%;" src="./../alta-cliente/Assets/facebook.svg"></a> 
+    <a target="_blank" href="https://www.youtube.com/channel/UCAQ55JfKwRfQdGP3CUAE8ag"><img style="left: 45%;" src="./../alta-cliente/Assets/youtube-play.svg"></a>
+                                            
+  </div>
+</article>
+
+</body>
