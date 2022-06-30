@@ -7,5 +7,6 @@
 }
 body{
     background: url(app/clientes/alta-cliente/Assets/fondoWeb.jpg);
+    background-size: cover;
 }
 
